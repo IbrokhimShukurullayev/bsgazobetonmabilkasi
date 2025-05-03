@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+.order-container {
+  max-width: 480px;
+  margin: auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.7%;
+  text-align: center;
+}
+
+.back-arrow {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.6%;
+  color: rgba(33, 34, 34, 1);
+}
+
+.iti__selected-flag {
+  border-right: 1px solid rgb(203, 213, 225);
+  padding: 12px !important;
+}
+
+input[type="tel"] {
+  width: 100%;
+  padding: 10px 0 10px 70px !important;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+input,
+select,
+.textarea {
+  width: 100%;
+  padding: 12px 15px;
+  box-sizing: border-box;
+  border: 1px solid rgb(203, 213, 225);
+  border-radius: 14px;
+  background: rgb(255, 255, 255);
+  font-size: 16px;
+  outline: none;
+}
+
+.textarea::placeholder {
+  font-family: Arial, sans-serif;
+  color: rgb(148, 163, 184);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.7%;
+  text-align: left;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #999;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-top: 10px;
+  gap: 10px;
+  background: #fff;
+}
+
+.phone-input img {
+  width: 20px;
+  height: 20px;
+}
+
+.phone-input input {
+  border: none;
+  flex: 1;
+  padding: 12px 0;
+}
+
+.delivery-options {
+  display: flex;
+  gap: 10px;
+}
+
+.delivery-options .option {
+  flex: 1;
+  padding: 12px 0 12px 0;
+  border-radius: 12px;
+  background: #fff;
+  border: none;
+  color: rgb(75, 85, 99);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.6%;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid transparent;
+  text-align: center;
+}
+
+.delivery-options .selected {
+  border-color: red;
+  color: red;
+  background: #fff5f5;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 14px;
+  font-size: 16px;
+  cursor: pointer;
+}

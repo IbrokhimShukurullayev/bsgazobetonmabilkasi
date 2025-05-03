@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OTP Verification (Error) - BS Gazobeton</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="otp-styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="phone-frame">
+      <div class="content otp-content">
+        <div class="error-notification">
+          <div class="error-icon">⚠️</div>
+          <div class="error-message">
+            The passwords do not match. Please try again.
+          </div>
+          <div class="close-icon">×</div>
+        </div>
+
+        <h1>Verification Code</h1>
+        <p class="verification-text">
+          A verification code has been sent to <br />+998 (90) 123-45-67
+        </p>
+
+        <div class="otp-input-container">
+          <input type="text" class="otp-input filled" value="2" readonly />
+          <input type="text" class="otp-input filled" value="2" readonly />
+          <input type="text" class="otp-input filled" value="2" readonly />
+          <input type="text" class="otp-input filled" value="2" readonly />
+          <input type="text" class="otp-input filled" value="2" readonly />
+          <input type="text" class="otp-input filled" value="2" readonly />
+        </div>
+
+        <div class="resend-code">
+          <span>Resend Code</span>
+        </div>
+
+        <button class="primary-button verify-button">
+          Verify
+          <span class="arrow">→</span>
+        </button>
+      </div>
+    </div>
+
+    <a href="otp.html" class="back-link">Back to OTP</a>
+
+    <script src="app.js"></script>
+  </body>
+</html>

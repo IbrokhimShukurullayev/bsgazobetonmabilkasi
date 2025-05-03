@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buyurtmani rasmiylashtirish</title>
+    <link rel="stylesheet" href="order.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+    />
+  </head>
+  <body>
+    <div class="order-container">
+      <div class="header">
+        <span class="back-arrow"><img src="./images/left.png" alt="" /></span>
+        <h2>Buyurtmani rasmiylashtirish</h2>
+      </div>
+
+      <form class="order-form">
+        <label>To‘liq ismingiz</label>
+        <input type="text" placeholder="Sohib" />
+
+        <div class="form-group">
+          <label for="phone">Phone number</label>
+          <div class="phone-input">
+            <input id="phone" name="phone" type="tel" />
+          </div>
+        </div>
+
+        <label>Email</label>
+        <input type="email" placeholder="Emailni kiriting" />
+
+        <label>Yetkazib berish</label>
+        <div class="delivery-options">
+          <button type="button" class="option selected">Yetkazib berish</button>
+          <button type="button" class="option">Zavoddan olib ketish</button>
+        </div>
+
+        <label class="hudud">Hudud</label>
+        <select>
+          <option>Hududni tanlang...</option>
+        </select>
+
+        <label class="manzil">Manzil</label>
+        <textarea
+          class="textarea"
+          name=""
+          rows="5"
+          placeholder="Manzilni kiriting"
+          id=""
+        ></textarea>
+
+        <button type="submit" class="submit-btn">Yuborish</button>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+
+    <script>
+      const phoneInput = document.querySelector("#phone");
+
+      window.intlTelInput(phoneInput, {
+        initialCountry: "uz",
+        nationalMode: false,
+        autoPlaceholder: "polite",
+        preferredCountries: ["uz", "us", "ru"],
+        utilsScript:
+          "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const deliveryBtn = document.querySelector(".option.selected");
+        const pickupBtn = document.querySelector(".option:nth-child(2)");
+        const regionInput = document.querySelector("select");
+        const addressInput = document.querySelector(".textarea");
+        const adress = document.querySelector(".hudud");
+        const manzil = document.querySelector(".manzil");
+
+        function updateForm(selectedOption) {
+          if (selectedOption === "delivery") {
+            regionInput.style.display = "block";
+            addressInput.style.display = "block";
+            adress.style.display = "block";
+            manzil.style.display = "block";
+          } else {
+            regionInput.style.display = "none";
+            addressInput.style.display = "none";
+            adress.style.display = "none";
+            manzil.style.display = "none";
+          }
+        }
+
+        // Dastlab Yetkazib berish tanlangan holatni tekshiramiz
+        updateForm("delivery");
+
+        // Tugmalarga event qo‘shamiz
+        deliveryBtn.addEventListener("click", function () {
+          deliveryBtn.classList.add("selected");
+          pickupBtn.classList.remove("selected");
+          updateForm("delivery");
+        });
+
+        pickupBtn.addEventListener("click", function () {
+          pickupBtn.classList.add("selected");
+          deliveryBtn.classList.remove("selected");
+          updateForm("pickup");
+        });
+      });
+    </script>
+  </body>
+</html>

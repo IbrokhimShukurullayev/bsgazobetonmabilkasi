@@ -1,0 +1,55 @@
+.language-content {
+  padding-top: 60px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.back-arrow {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.language-list {
+  margin-top: 20px;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+
+.language-flag {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.check-icon {
+  margin-left: auto;
+  color: #e53935;
+  font-weight: bold;
+}
+
+.language-item.selected {
+  color: #e53935;
+}
+
+.language-item:hover {
+  background-color: #f9f9f9;
+}

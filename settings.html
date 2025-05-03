@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Settings</title>
+    <link rel="stylesheet" href="./setting.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-bar">
+        <button class="back"><img src="./images/left.png" alt="" /></button>
+        <p class="delete">Delete account</p>
+      </div>
+
+      <h1>User settings</h1>
+
+      <div class="profile-photo">
+        <img src="./images/profiles.png" alt="User photo" />
+        <button class="edit-btn">Edit</button>
+      </div>
+
+      <form>
+        <label>To‘liq ismingiz</label>
+        <input type="text" placeholder="Sohib" />
+
+        <label>Phone number</label>
+        <div class="phone-input">
+          <img src="./images/Flags.png" alt="UZB" />
+          <input type="tel" placeholder="+998 (90)123–45–67" />
+        </div>
+
+        <label>Email</label>
+        <div class="input-icon">
+          <span><img src="./images/email.png" alt="" /></span>
+          <input type="email" placeholder="Emailni kiriting" />
+        </div>
+
+        <label>Hudud</label>
+        <select>
+          <option>Hududni tanlang...</option>
+          <option>Toshkent</option>
+          <option>Samarqand</option>
+          <option>Buxoro</option>
+        </select>
+
+        <label>Manzil</label>
+        <textarea placeholder="Manzilni kiriting"></textarea>
+
+        <button type="submit" class="save-btn">Save</button>
+      </form>
+    </div>
+  </body>
+</html>
