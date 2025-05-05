@@ -1,15 +1,14 @@
-body {
-  font-family: sans-serif;
-  padding: 16px;
-  background: rgba(245, 245, 245, 1);
+.cantacts {
+  padding: 20px 0 0 0;
 }
 
-h2 {
+.cantacts__title {
   font-weight: 700;
   font-size: 30px;
   line-height: 38px;
   letter-spacing: -1.3%;
   color: rgba(33, 34, 34, 1);
+  padding: 16px 0;
 }
 .phone-box {
   display: flex;
@@ -21,6 +20,11 @@ h2 {
   line-height: 20px;
   letter-spacing: -0.6%;
 }
+
+.socials {
+  padding: 16px 0 0 0;
+}
+
 .socials img {
   width: 24px;
   margin-right: 8px;
@@ -35,17 +39,20 @@ h2 {
   text-decoration: none;
   padding: 12px;
   margin-bottom: 14px;
+  box-shadow: 0px 8px 16px 0px rgba(15, 23, 42, 0.02);
+  box-shadow: 0px 4px 8px 0px rgba(15, 23, 42, 0.03);
 }
 
-p {
+.cantacts__text {
   color: rgba(75, 85, 99, 1);
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   letter-spacing: -0.6%;
+  padding-bottom: 16px;
 }
 
-p span {
+.cantacts__text span {
   color: rgba(220, 38, 38, 1);
   font-weight: 700;
   font-size: 16px;

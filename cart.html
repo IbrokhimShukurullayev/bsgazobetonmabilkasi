@@ -5,60 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./cart.css" />
-    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./style/button.css" />
   </head>
   <body>
-    <div class="cart">
-      <div class="cart-container">
-        <h2>Cart: 3</h2>
+    <div class="container">
+      <div class="cart">
+        <h2 class="cart__title">Cart: 3</h2>
 
-        <div class="cart-item">
-          <img src="./images/card1.png" alt="Gazobeton" />
-          <div class="details">
-            <h3>Gazobeton</h3>
-            <p>D300, 600×200×200<br />72 000 UZS/m3</p>
-            <span class="price">600 000 UZS/m3</span>
-            <div class="quantity">
-              <button>-</button>
-              <span>1</span>
-              <button>+</button>
+        <div class="cart__box">
+          <div class="cart__item">
+            <img
+              class="cart__item__img"
+              src="./images/card1.png"
+              alt="Gazobeton"
+            />
+            <div class="cart__details">
+              <h3 class="cart__details__title">Gazobeton</h3>
+              <p class="cart__details__text">
+                D300, 600×200×200<br />72 000 UZS/m3
+              </p>
+              <span class="cart__price">600 000 UZS/m3</span>
+              <div class="cart__quantity">
+                <button class="cart__quantity__add">
+                  <img
+                    class="cart__quantity__add__img"
+                    src="./images/minus.svg"
+                    alt="minus"
+                  />
+                </button>
+                <span class="cart__quantity__text">1</span>
+                <button class="cart__quantity__add">
+                  <img
+                    class="cart__quantity__add__img"
+                    src="./images/plus.svg"
+                    alt="plus"
+                  />
+                </button>
+              </div>
             </div>
+            <button class="cart__remove">
+              <img src="./images/delete.svg" alt="delete" />
+            </button>
           </div>
-          <button class="remove">×</button>
+
+          <div class="cart__item">
+            <img
+              class="cart__item__img"
+              src="./images/card1.png"
+              alt="Gazobeton"
+            />
+            <div class="cart__details">
+              <h3 class="cart__details__title">Gazobeton</h3>
+              <p class="cart__details__text">
+                D300, 600×200×200<br />72 000 UZS/m3
+              </p>
+              <span class="cart__price">600 000 UZS/m3</span>
+              <div class="cart__quantity">
+                <button class="cart__quantity__add">
+                  <img
+                    class="cart__quantity__add__img"
+                    src="./images/minus.svg"
+                    alt="minus"
+                  />
+                </button>
+                <span class="cart__quantity__text">1</span>
+                <button class="cart__quantity__add">
+                  <img
+                    class="cart__quantity__add__img"
+                    src="./images/plus.svg"
+                    alt="plus"
+                  />
+                </button>
+              </div>
+            </div>
+            <button class="cart__remove">
+              <img src="./images/delete.svg" alt="delete" />
+            </button>
+          </div>
+          <div class="cart__item">
+            <img
+              class="cart__item__img"
+              src="./images/card1.png"
+              alt="Gazobeton"
+            />
+            <div class="cart__details">
+              <h3 class="cart__details__title">Gazobeton</h3>
+              <p class="cart__details__text">
+                D300, 600×200×200<br />72 000 UZS/m3
+              </p>
+              <span class="cart__price">600 000 UZS/m3</span>
+              <div class="cart__quantity">
+                <button class="cart__quantity__add">
+                  <img
+                    class="cart__quantity__add__img"
+                    src="./images/minus.svg"
+                    alt="minus"
+                  />
+                </button>
+                <span class="cart__quantity__text">1</span>
+                <button class="cart__quantity__add">
+                  <img
+                    class="cart__quantity__add__img"
+                    src="./images/plus.svg"
+                    alt="plus"
+                  />
+                </button>
+              </div>
+            </div>
+            <button class="cart__remove">
+              <img src="./images/delete.svg" alt="delete" />
+            </button>
+          </div>
         </div>
 
-        <div class="cart-item">
-          <img src="./images/card1.png" alt="Gazobeton" />
-          <div class="details">
-            <strong>Gazobeton</strong>
-            <p>D300, 600×200×200<br />72 000 UZS/m3</p>
-            <span class="price">600 000 UZS/m3</span>
-            <div class="quantity">
-              <button>-</button>
-              <span>1</span>
-              <button>+</button>
-            </div>
-          </div>
-          <button class="remove">×</button>
-        </div>
-        <div class="cart-item">
-          <img src="./images/card1.png" alt="Gazobeton" />
-          <div class="details">
-            <strong>Gazobeton</strong>
-            <p>D300, 600×200×200<br />72 000 UZS/m3</p>
-            <span class="price">600 000 UZS/m3</span>
-            <div class="quantity">
-              <button>-</button>
-              <span>1</span>
-              <button>+</button>
-            </div>
-          </div>
-          <button class="remove">×</button>
-        </div>
+        <div class="cart__total">Umumiy: 494 000 UZS</div>
 
-        <div class="total">Umumiy: 494 000 UZS</div>
-
-        <button class="checkout">Buyurtmani rasmiylashtirish</button>
+        <button class="form__button">Buyurtmani rasmiylashtirish</button>
       </div>
       <ul class="home__footer__list">
         <li><img src="./images/main.png" alt="main" /> <span>Main</span></li>

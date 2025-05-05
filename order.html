@@ -5,62 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buyurtmani rasmiylashtirish</title>
     <link rel="stylesheet" href="order.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./style/input.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
     />
   </head>
   <body>
-    <div class="order-container">
-      <div class="header">
-        <span class="back-arrow"><img src="./images/left.png" alt="" /></span>
-        <h2>Buyurtmani rasmiylashtirish</h2>
-      </div>
+    <div class="container">
+      <div id="order">
+        <div class="order__header">
+          <span class="back-arrow"><img src="./images/left.svg" alt="" /></span>
+          <h2 class="order__header__title">Buyurtmani rasmiylashtirish</h2>
+        </div>
 
-      <form class="order-form">
-        <label>To‘liq ismingiz</label>
-        <input type="text" placeholder="Sohib" />
-
-        <div class="form-group">
-          <label for="phone">Phone number</label>
-          <div class="phone-input">
-            <input id="phone" name="phone" type="tel" />
+        <form class="order__form">
+          <div class="order__form__info">
+            <label class="form__group__label">To‘liq ismingiz</label>
+            <input class="form__group__input" type="text" placeholder="Sohib" />
           </div>
-        </div>
 
-        <label>Email</label>
-        <input type="email" placeholder="Emailni kiriting" />
+          <div class="form-group">
+            <label class="form__group__labels" for="phone">Phone number</label>
+            <div class="form__group__phone">
+              <input
+                class="form__group__phone__input"
+                id="phone"
+                name="phone"
+                type="tel"
+              />
+            </div>
+          </div>
 
-        <label>Yetkazib berish</label>
-        <div class="delivery-options">
-          <button type="button" class="option selected">Yetkazib berish</button>
-          <button type="button" class="option">Zavoddan olib ketish</button>
-        </div>
+          <div class="order__form__info">
+            <label class="form__group__label">Email</label>
+            <input
+              class="form__group__input"
+              type="email"
+              placeholder="Emailni kiriting"
+            />
+          </div>
 
-        <label class="hudud">Hudud</label>
-        <select>
-          <option>Hududni tanlang...</option>
-        </select>
+          <div class="order__form__info">
+            <label class="form__group__label">Yetkazib berish</label>
+            <div class="delivery__options">
+              <button type="button" class="option selected">
+                Yetkazib berish
+              </button>
+              <button type="button" class="option">Zavoddan olib ketish</button>
+            </div>
+          </div>
 
-        <label class="manzil">Manzil</label>
-        <textarea
-          class="textarea"
-          name=""
-          rows="5"
-          placeholder="Manzilni kiriting"
-          id=""
-        ></textarea>
+          <div class="order__form__info" id="region-group">
+            <label class="form__group__label">Hudud</label>
+            <select class="form__group__input">
+              <option>Hududni tanlang...</option>
+            </select>
+          </div>
 
-        <button type="submit" class="submit-btn">Yuborish</button>
-      </form>
+          <div class="order__form__info" id="address-group">
+            <label class="form__group__label">Manzil</label>
+            <textarea
+              class="form__group__input"
+              rows="5"
+              placeholder="Manzilni kiriting"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="order__form__button">Yuborish</button>
+        </form>
+      </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
 
     <script>
       const phoneInput = document.querySelector("#phone");
-
       window.intlTelInput(phoneInput, {
         initialCountry: "uz",
         nationalMode: false,
@@ -70,33 +92,26 @@
           "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
       });
     </script>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const deliveryBtn = document.querySelector(".option.selected");
-        const pickupBtn = document.querySelector(".option:nth-child(2)");
-        const regionInput = document.querySelector("select");
-        const addressInput = document.querySelector(".textarea");
-        const adress = document.querySelector(".hudud");
-        const manzil = document.querySelector(".manzil");
+        const deliveryBtn = document.querySelector(".option:first-child");
+        const pickupBtn = document.querySelector(".option:last-child");
+        const regionGroup = document.querySelector("#region-group");
+        const addressGroup = document.querySelector("#address-group");
 
         function updateForm(selectedOption) {
           if (selectedOption === "delivery") {
-            regionInput.style.display = "block";
-            addressInput.style.display = "block";
-            adress.style.display = "block";
-            manzil.style.display = "block";
+            regionGroup.style.display = "flex";
+            addressGroup.style.display = "flex";
           } else {
-            regionInput.style.display = "none";
-            addressInput.style.display = "none";
-            adress.style.display = "none";
-            manzil.style.display = "none";
+            regionGroup.style.display = "none";
+            addressGroup.style.display = "none";
           }
         }
 
-        // Dastlab Yetkazib berish tanlangan holatni tekshiramiz
         updateForm("delivery");
 
-        // Tugmalarga event qo‘shamiz
         deliveryBtn.addEventListener("click", function () {
           deliveryBtn.classList.add("selected");
           pickupBtn.classList.remove("selected");

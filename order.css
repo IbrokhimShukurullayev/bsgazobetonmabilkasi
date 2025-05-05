@@ -1,23 +1,15 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-}
-
-.order-container {
-  max-width: 480px;
-  margin: auto;
-  padding: 20px;
-}
-
-.header {
+.order__header {
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
+  gap: 46px;
+  padding: 10px 0 42px 0;
 }
 
-.header h2 {
+#order {
+  padding: 13px 0 32px 0;
+}
+
+.order__header__title {
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
@@ -30,89 +22,12 @@ body {
   cursor: pointer;
 }
 
-.order-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-label {
-  display: block;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: -0.6%;
-  color: rgba(33, 34, 34, 1);
-}
-
-.iti__selected-flag {
-  border-right: 1px solid rgb(203, 213, 225);
-  padding: 12px !important;
-}
-
-input[type="tel"] {
-  width: 100%;
-  padding: 10px 0 10px 70px !important;
-  border-radius: 12px;
-  font-size: 18px;
-}
-
-input,
-select,
-.textarea {
-  width: 100%;
-  padding: 12px 15px;
-  box-sizing: border-box;
-  border: 1px solid rgb(203, 213, 225);
-  border-radius: 14px;
-  background: rgb(255, 255, 255);
-  font-size: 16px;
-  outline: none;
-}
-
-.textarea::placeholder {
-  font-family: Arial, sans-serif;
-  color: rgb(148, 163, 184);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 22px;
-  letter-spacing: -0.7%;
-  text-align: left;
-}
-
-input:focus,
-select:focus {
-  outline: none;
-  border-color: #999;
-}
-
-.phone-input {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  margin-top: 10px;
-  gap: 10px;
-  background: #fff;
-}
-
-.phone-input img {
-  width: 20px;
-  height: 20px;
-}
-
-.phone-input input {
-  border: none;
-  flex: 1;
-  padding: 12px 0;
-}
-
-.delivery-options {
+.delivery__options {
   display: flex;
   gap: 10px;
 }
 
-.delivery-options .option {
+.delivery__options .option {
   flex: 1;
   padding: 12px 0 12px 0;
   border-radius: 12px;
@@ -130,13 +45,13 @@ select:focus {
   text-align: center;
 }
 
-.delivery-options .selected {
-  border-color: red;
+.delivery__options .selected {
+  border: 1px solid red;
   color: red;
   background: #fff5f5;
 }
 
-.submit-btn {
+.order__form__button {
   margin-top: 20px;
   background: red;
   color: white;

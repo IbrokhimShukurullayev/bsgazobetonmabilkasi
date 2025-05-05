@@ -1,0 +1,37 @@
+.form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 13px 0;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.7%;
+  text-align: left;
+  border-radius: 14px;
+  background: rgb(220, 38, 38);
+  border: none;
+}
+
+.home__calculator__card__button {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: -0.7%;
+  text-align: left;
+  padding: 13px 20px;
+  border-radius: 14px;
+  border: none !important;
+  background: rgb(220, 38, 38);
+}
+
+.form__button__login {
+  margin-top: 20px;
+}

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Splash Screen - BS Gazobeton</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="splash-styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./loading.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
@@ -13,21 +13,19 @@
   </head>
   <body>
     <div class="phone-frame">
-      <div class="content splash-content">
-        <div class="logo-container">
+      <div class="content loading__content">
+        <div class="logo__container">
           <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Frame%201948753014%20%281%29-v0uZSepH4KHiIu8HXFqVKu90PAxkg3.png"
+            aria-colspan=""
+            src="./images/logo.svg"
             alt="BS Gazobeton Logo"
-            class="logo"
+            class="logo__container__logo"
           />
         </div>
 
-        <div class="loading-spinner"></div>
+        <div class="loading__spinner"></div>
       </div>
     </div>
-
-    <a href="index.html" class="back-link">Back to Home</a>
-
     <script src="app.js"></script>
   </body>
 </html>

@@ -6,52 +6,66 @@
     <title>Sign Up - BS Gazobeton</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="signup-styles.css" />
+    <link rel="stylesheet" href="./style/button.css" />
+    <link rel="stylesheet" href="./style/input.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
     />
   </head>
   <body>
-    <div class="phone-frames">
-      <img src="./images/left.png" alt="" />
-      <div class="content signup-content">
-        <h1>Sign Up</h1>
-        <p class="signup-text">
-          Please select the following options to reset your password.
-        </p>
+    <div id="signup">
+      <div class="container">
+        <img src="./images/left.png" alt="" />
+        <div class="content signup__content">
+          <h1 class="signup__title">Sign Up</h1>
+          <p class="signup-text">
+            Please select the following options to reset your password.
+          </p>
 
-        <div class="form-group">
-          <label>To’liq ismingiz</label>
-          <input type="text" placeholder="Ismingizni kiriting" />
+          <form action="" class="order__form">
+            <div class="order__form__info">
+              <label class="form__group__label">To’liq ismingiz</label>
+              <input
+                class="form__group__input"
+                type="text"
+                placeholder="Ismingizni kiriting"
+              />
+            </div>
+
+            <div class="order__form__info">
+              <label class="form__group__label">Email</label>
+              <input
+                class="form__group__input"
+                type="email"
+                placeholder="Emailni kiriting"
+              />
+            </div>
+
+            <div class="order__form__info">
+              <label class="form__group__label">Hudud</label>
+              <select class="form__group__input">
+                <option>Hududni tanlang...</option>
+              </select>
+            </div>
+
+            <div class="order__form__info">
+              <label class="form__group__label">Manzil</label>
+              <textarea
+                class="form__group__input"
+                name=""
+                rows="5"
+                placeholder="Manzilni kiriting"
+                id=""
+              ></textarea>
+            </div>
+
+            <button class="form__button">
+              Continue
+              <span class="arrow"><img src="./images/right.png" alt="" /></span>
+            </button>
+          </form>
         </div>
-
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" placeholder="Emailni kiriting" />
-        </div>
-
-        <div class="form-group">
-          <label>Hudud</label>
-          <div class="select-input">
-            <input type="text" placeholder="Hududni tanlang..." readonly />
-            <div class="dropdown-arrow">▼</div>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <label>Manzil</label>
-          <textarea
-            name=""
-            rows="5"
-            placeholder="Manzilni kiriting"
-            id=""
-          ></textarea>
-        </div>
-
-        <button class="primary-button continue-button">
-          Continue
-          <span class="arrow"><img src="./images/right.png" alt="" /></span>
-        </button>
       </div>
     </div>
 

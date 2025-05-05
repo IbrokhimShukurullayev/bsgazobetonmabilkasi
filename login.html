@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - BS Gazobeton</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="login-styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./login-styles.css" />
+    <link rel="stylesheet" href="./style/input.css" />
+    <link rel="stylesheet" href="./style/button.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
@@ -16,34 +18,36 @@
     />
   </head>
   <body>
-    <div class="phone-frame">
-      <div class="content login-content">
-        <div class="language-selector">
-          <div class="language-icon">🌐</div>
-          <span>English</span>
+    <div class="container">
+      <div class="content login__content">
+        <div class="language__selector">
+          <div class="language__img">🌐</div>
+          <p class="language__selector__text">English</p>
         </div>
-        <div class="logo-container">
+        <div class="language__logo">
           <img
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Frame%201948753014%20%281%29-v0uZSepH4KHiIu8HXFqVKu90PAxkg3.png"
             alt="BS Gazobeton Logo"
             class="logo"
           />
         </div>
-        <div class="form-group">
-          <label for="phone">Phone number</label>
-          <div class="phone-input">
-            <input id="phone" name="phone" type="tel" />
+        <div class="form__group">
+          <label class="form__group__label" for="phone">Phone number</label>
+          <div class="form__group__phone">
+            <input
+              class="form__group__phone__input"
+              id="phone"
+              name="phone"
+              type="tel"
+            />
           </div>
+          <button class="form__button form__button__login">
+            Login
+            <img src="./images/right.png" alt="right" />
+          </button>
         </div>
-        <button class="primary-button">
-          Login
-          <img src="./images/right.png" alt="right" />
-        </button>
       </div>
     </div>
-
-    <a href="index.html" class="back-link">Back to Home</a>
-
     <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 

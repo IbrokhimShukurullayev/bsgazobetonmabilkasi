@@ -5,36 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./calculate.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./style/input.css" />
+    <link rel="stylesheet" href="./style/button.css" />
   </head>
   <body>
-    <div class="calculate">
-      <div class="calculte__header">
-        <img src="./images/left.png" alt="" />
-        <h3>Kalkulyator</h3>
-      </div>
-      <form action="" class="calculate__form">
-        <div class="calculate__form__input">
-          <label for="">Devor uzunligi (m)</label>
-          <input type="text" placeholder="0 m" />
+    <div id="calculate">
+      <div class="container">
+        <div class="calculate">
+          <div class="calculte__header">
+            <img src="./images/left.png" alt="" />
+            <h3 class="calculte__header__title">Kalkulyator</h3>
+          </div>
+          <form action="" class="order__form">
+            <div class="order__form__info">
+              <label class="form__group__label" for=""
+                >Devor uzunligi (m)</label
+              >
+              <input class="form__group__input" type="text" placeholder="0 m" />
+            </div>
+            <div class="order__form__info">
+              <label class="form__group__label" for=""
+                >Devor balandligi (m)</label
+              >
+              <input class="form__group__input" type="text" placeholder="0 m" />
+            </div>
+            <div class="order__form__info">
+              <label class="form__group__label" for=""
+                >Devor qalinligi (mm)</label
+              >
+              <select class="form__group__input" name="" id="">
+                <option value="">100mm</option>
+                <option value="">100mm</option>
+                <option value="">100mm</option>
+              </select>
+            </div>
+            <button class="form__button">Hisoblash</button>
+          </form>
+          <div class="calculate__end">
+            <h3 class="calculate__end__title">Natija</h3>
+            <p class="calculate__end__text">
+              Kerakli gazobloklar soni: <strong>XXX dona</strong>
+            </p>
+            <p class="calculate__end__text">
+              Umumiy hajmi: <strong>XXX m3</strong>
+            </p>
+          </div>
         </div>
-        <div class="calculate__form__input">
-          <label for="">Devor balandligi (m)</label>
-          <input type="text" placeholder="0 m" />
-        </div>
-        <div class="calculate__form__input">
-          <label for="">Devor qalinligi (mm)</label>
-          <select name="" id="">
-            <option value="">100mm</option>
-            <option value="">100mm</option>
-            <option value="">100mm</option>
-          </select>
-        </div>
-        <button>Hisoblash</button>
-      </form>
-      <div class="calculate__end">
-        <h3>Natija</h3>
-        <p>Kerakli gazobloklar soni: <strong>XXX dona</strong></p>
-        <p>Umumiy hajmi: <strong>XXX m3</strong></p>
       </div>
     </div>
   </body>

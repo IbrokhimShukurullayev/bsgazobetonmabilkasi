@@ -1,0 +1,109 @@
+.form__group__input {
+  padding: 13px 0 13px 12px;
+  color: rgb(33, 34, 34);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.7%;
+  text-align: left;
+  width: 100%;
+  border: 1px solid rgb(203, 213, 225);
+  border-radius: 14px;
+  background: rgb(255, 255, 255);
+}
+
+.form__group__label {
+  color: rgb(33, 34, 34);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.6%;
+  text-align: left;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #999;
+}
+.order__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.order__form__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form__group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form__group__labels {
+  color: rgba(33, 34, 34, 1);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.6%;
+}
+
+.iti__selected-flag {
+  background: rgba(248, 250, 252, 1);
+  border-right: 1px solid rgb(203, 213, 225);
+  padding: 12px 35px 12px 12px !important;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+
+.form__group__phone {
+  display: flex;
+  border: 1px solid rgb(203, 213, 225);
+  border-radius: 14px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+.form__group__phone__input {
+  width: 100%;
+  padding: 12px 15px;
+  border: none;
+  outline: none;
+  color: rgba(75, 85, 99, 1);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.7%;
+}
+
+.form__group__phone__input::placeholder {
+  font-weight: 400;
+}
+
+.iti__arrow {
+  display: none;
+}
+
+.iti__selected-flag::after {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 8px;
+  background-image: url("../images/arrov.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.form__group__phone__input {
+  width: 100%;
+  padding: 10px 10px 10px 80px !important;
+  border-radius: 14px;
+  font-size: 18px;
+}
