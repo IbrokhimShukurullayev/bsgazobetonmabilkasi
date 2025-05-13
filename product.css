@@ -1,18 +1,10 @@
-body {
-  margin: 0;
-  font-family: sans-serif;
-  background-color: rgba(245, 245, 245, 1);
+.product__header {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 13px 0;
 }
-
-.container {
-  max-width: 360px;
-  margin: 20px auto;
-  /* padding: 20px; */
-  background-color: rgba(245, 245, 245, 1);
-  border-radius: 12px;
-}
-
-.title {
+.product__header__title {
   color: rgba(33, 34, 34, 1);
   margin-bottom: 10px;
   font-weight: 600;
@@ -22,7 +14,7 @@ body {
   text-align: left;
 }
 
-.tabs {
+.product__tabs {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -30,64 +22,34 @@ body {
   background-color: transparent;
 }
 
-.product__header {
-  display: flex;
-  align-items: center;
-  gap: 80px;
-  margin-bottom: 20px;
-}
-
-.tab {
+.product__tab {
   padding: 10px 16px;
   border-radius: 12px;
-  border: none;
-  background: white;
+  border: 1px solid transparent;
+  background: #fff;
+  font-weight: 600;
   font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.6%;
+  color: rgba(75, 85, 99, 1);
   cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(28, 25, 23, 0.02);
+  box-shadow: 0px 4px 8px 0px rgba(28, 25, 23, 0.03);
+  transition: 0.5s;
 }
 
-.tab.active {
+.product__tab.active {
   background-color: #ffdddd;
-  color: red;
+  color: rgba(220, 38, 38, 1);
   border: none;
-  border: 1px solid red;
+  border: 1px solid rgba(220, 38, 38, 1);
 }
 
-.subtitle {
-  font-size: 16px;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.card {
-  display: flex;
-  align-items: center;
-  background: #f7f7f7;
-  border-radius: 12px;
-  padding: 10px;
-  position: relative;
-}
-
-.card-img {
-  width: 70px;
-  height: auto;
-  margin-right: 10px;
-}
-
-.card-info {
-  flex: 1;
-  font-size: 13px;
-}
-
-.price {
-  color: red;
-  font-weight: bold;
-  margin-top: 5px;
-}
-
-.card-arrow {
-  position: absolute;
-  right: 12px;
-  font-size: 22px;
-  color: red;
+.product__title {
+  color: rgba(33, 34, 34, 1);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -1.2%;
+  text-align: left;
 }

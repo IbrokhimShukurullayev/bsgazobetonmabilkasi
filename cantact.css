@@ -22,12 +22,14 @@
 }
 
 .socials {
+  display: flex;
+  align-items: center;
+  gap: 24px;
   padding: 16px 0 0 0;
 }
 
 .socials img {
   width: 24px;
-  margin-right: 8px;
 }
 
 .cantact {

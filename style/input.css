@@ -107,3 +107,22 @@ textarea:focus {
   border-radius: 14px;
   font-size: 18px;
 }
+
+.form__select__hudud {
+  position: relative;
+}
+
+.form__select {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.order__form__info__img {
+  position: absolute;
+  right: 10px;
+  top: 67%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}

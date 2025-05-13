@@ -1,27 +1,20 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
-}
-
-.container {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 16px;
-  background: #f2f2f2;
-}
-
-/* Header */
-.header {
+.orders {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
 }
 
-.header h2 {
-  font-size: 24px;
-  font-weight: bold;
+.orders__phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: rgba(220, 38, 38, 1);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.7%;
 }
 
 .call-btn {
@@ -32,30 +25,36 @@ body {
   cursor: pointer;
 }
 
-.tabs {
+.orders__tabs {
   display: flex;
   margin: 0 0 16px 0;
-  background: #d9d9d9;
+  background: rgba(33, 34, 34, 0.1);
   padding: 4px;
-  border-radius: 12px;
+  border-radius: 18px;
 }
 
-.tab {
+.orders__tab {
   flex: 1;
   padding: 10px;
   border: none;
   background: transparent;
-  border-radius: 10px;
-  font-size: 16px;
+  border-radius: 18px;
+  color: rgba(33, 34, 34, 1);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.6%;
   cursor: pointer;
+  box-shadow: 0px 8px 16px 0px rgba(15, 23, 42, 0.02);
+  box-shadow: 0px 4px 8px 0px rgba(15, 23, 42, 0.03);
 }
 
-.tab.active {
+.orders__tab.active {
   background: #fff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-.order-card {
+.orders__card {
   background: #fff;
   padding: 16px;
   border-radius: 12px;
@@ -63,14 +62,14 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-.order-header {
+.orders__header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 6px;
 }
 
-.order-header strong {
+.orders__header strong {
   color: rgba(33, 34, 34, 1);
   font-weight: 700;
   font-size: 16px;
@@ -78,7 +77,7 @@ body {
   letter-spacing: -0.6%;
 }
 
-.order-date {
+.orders__date {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -87,30 +86,31 @@ body {
   margin: 0;
 }
 
-.order-price {
+.orders__price {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: -0.5%;
   color: rgba(100, 116, 139, 1);
+  padding-top: 12px;
 }
 
-.badge {
+.orders__badge {
   font-size: 12px;
   padding: 4px 8px;
-  border-radius: 8px;
+  border-radius: 6px;
   font-weight: bold;
   white-space: nowrap;
 }
 
-.badge-yellow {
-  background: #ffe9b3;
-  color: #a15f00;
+.orders__badge__yellow {
+  background: rgba(240, 149, 2, 0.1);
+  color: rgba(228, 147, 8, 1);
 }
 
-.badge-blue {
-  background: #e0f0ff;
-  color: #007aff;
+.orders__badge__blue {
+  background: rgba(0, 122, 255, 0.1);
+  color: rgba(0, 122, 255, 1);
 }
 
 .back {

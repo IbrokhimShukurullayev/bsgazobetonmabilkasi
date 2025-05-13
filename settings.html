@@ -5,49 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Settings</title>
     <link rel="stylesheet" href="./setting.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./style/input.css" />
+    <link rel="stylesheet" href="./style/button.css" />
   </head>
   <body>
     <div class="container">
-      <div class="top-bar">
-        <button class="back"><img src="./images/left.png" alt="" /></button>
-        <p class="delete">Delete account</p>
+      <div class="setting__top">
+        <button class="setting__top__button">
+          <img src="./images/left.svg" alt="" />
+        </button>
+        <p class="setting__top__delete">Delete account</p>
       </div>
 
-      <h1>User settings</h1>
+      <h1 class="setting__top__title">User settings</h1>
 
       <div class="profile-photo">
-        <img src="./images/profiles.png" alt="User photo" />
+        <img src="./images/profiles.svg" alt="User photo" />
         <button class="edit-btn">Edit</button>
       </div>
 
-      <form>
-        <label>To‘liq ismingiz</label>
-        <input type="text" placeholder="Sohib" />
-
-        <label>Phone number</label>
-        <div class="phone-input">
-          <img src="./images/Flags.png" alt="UZB" />
-          <input type="tel" placeholder="+998 (90)123–45–67" />
+      <form action="" class="order__form">
+        <div class="order__form__info">
+          <label class="form__group__label">To’liq ismingiz</label>
+          <input
+            class="form__group__input"
+            type="text"
+            placeholder="Ismingizni kiriting"
+          />
         </div>
 
-        <label>Email</label>
-        <div class="input-icon">
-          <span><img src="./images/email.png" alt="" /></span>
-          <input type="email" placeholder="Emailni kiriting" />
+        <div class="order__form__info">
+          <label class="form__group__label">Email</label>
+          <input
+            class="form__group__input"
+            type="email"
+            placeholder="Emailni kiriting"
+          />
         </div>
 
-        <label>Hudud</label>
-        <select>
-          <option>Hududni tanlang...</option>
-          <option>Toshkent</option>
-          <option>Samarqand</option>
-          <option>Buxoro</option>
-        </select>
+        <div class="order__form__info form__select__hudud">
+          <label class="form__group__label">Hudud</label>
+          <select class="form__group__input form__select">
+            <option>Hududni tanlang...</option>
+          </select>
+          <img
+            class="order__form__info__img"
+            src="./images/arrov.svg"
+            alt="arrov"
+          />
+        </div>
 
-        <label>Manzil</label>
-        <textarea placeholder="Manzilni kiriting"></textarea>
+        <div class="order__form__info">
+          <label class="form__group__label">Manzil</label>
+          <textarea
+            class="form__group__input"
+            name=""
+            rows="5"
+            placeholder="Manzilni kiriting"
+            id=""
+          ></textarea>
+        </div>
 
-        <button type="submit" class="save-btn">Save</button>
+        <button class="form__button">Save</button>
       </form>
     </div>
   </body>

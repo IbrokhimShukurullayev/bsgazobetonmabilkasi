@@ -12,34 +12,52 @@
     />
   </head>
   <body>
-    <div class="phone-frames">
-      <div class="content language-content">
-        <div class="back-button">
-          <span class="back-arrow">←</span>
+    <div class="language-content container">
+      <div class="language__button">
+        <img src="./images/left.svg" alt="left" />
+      </div>
+      <h1 class="language__title">Language</h1>
+
+      <div class="language-list">
+        <div class="language-item selected" data-lang="uzbek">
+          <div class="language-flag">
+            <img src="./images/uzbflag.svg" alt="uzbflag" />
+          </div>
+          <span class="language-name">Uzbek</span>
+          <div class="language-checkbox">
+            <div class="checkbox-circle">
+              <div class="checkbox-check">
+                <img src="./images/arrowright.svg" alt="arrow" />
+              </div>
+            </div>
+          </div>
         </div>
-        <h1>Language</h1>
 
-        <div class="language-list">
-          <div class="language-item selected">
-            <div class="language-flag">🇺🇿</div>
-            <span>Uzbek</span>
-            <div class="check-icon">✓</div>
+        <div class="language-item" data-lang="english">
+          <div class="language-flag">
+            <img src="./images/englishflag.svg" alt="englishflag" />
           </div>
-
-          <div class="language-item">
-            <div class="language-flag">🇬🇧</div>
-            <span>English</span>
+          <span class="language-name">English</span>
+          <div class="language-checkbox">
+            <div class="checkbox-circle">
+              <img src="./images/arrowright.svg" alt="arrow" />
+            </div>
           </div>
+        </div>
 
-          <div class="language-item">
-            <div class="language-flag">🇷🇺</div>
-            <span>Russian</span>
+        <div class="language-item" data-lang="russian">
+          <div class="language-flag">
+            <img src="./images/russionflag.svg" alt="russian" />
+          </div>
+          <span class="language-name">Russian</span>
+          <div class="language-checkbox">
+            <div class="checkbox-circle">
+              <img src="./images/arrowright.svg" alt="arrow" />
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <a href="index.html" class="back-link">Back to Home</a>
 
     <script src="app.js"></script>
   </body>

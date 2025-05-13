@@ -6,56 +6,83 @@
     <title>Buyurtma Tafsilotlari</title>
     <link rel="stylesheet" href="./orderdetailes.css" />
     <link rel="stylesheet" href="./cart.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./style/cart.css" />
   </head>
   <body>
-    <div class="details-container">
-      <div class="back">
-        <span><img src="./images/left.png" alt="" /></span> <span>Ortga</span>
-      </div>
+    <div class="orderdetailes">
+      <div class="container">
+        <div class="orderdetailes__box">
+          <img class="orderdetailes__img" src="./images/left.svg" alt="" />
+          <p class="orderdetailes__text">Ortga</p>
+        </div>
 
-      <h3 class="order-title">Buyurtma ID: <strong>#123312</strong></h3>
+        <h3 class="orderdetailes__title">
+          Buyurtma ID: <strong>#123312</strong>
+        </h3>
 
-      <div class="info">
-        <div class="row">
-          <span>Buyurtma sanasi:</span
-          ><span class="row__text">24 fevral 2025, 09:12</span>
+        <div class="orderdetailes__info">
+          <div class="orderdetailes__row">
+            <p class="orderdetailes__row__title">Buyurtma sanasi:</p>
+            <p class="orderdetailes__row__text">24 fevral 2025, 09:12</p>
+          </div>
+          <div class="orderdetailes__row">
+            <p class="orderdetailes__row__title">Holati:</p>
+            <p class="orderdetailes__row__text orderdetailes__row__new">
+              Yangi
+            </p>
+          </div>
+          <div class="orderdetailes__row">
+            <p class="orderdetailes__row__title">Umumiy summa:</p>
+            <p class="orderdetailes__row__text">30 000 000 UZS</p>
+          </div>
+          <div class="orderdetailes__row">
+            <p class="orderdetailes__row__title">Qo’shimcha:</p>
+            <p class="orderdetailes__row__text">Yetkazib berish</p>
+          </div>
+          <div class="orderdetailes__row">
+            <p class="orderdetailes__row__title">Hudud:</p>
+            <p class="orderdetailes__row__text">Toshkent sh.</p>
+          </div>
+          <div class="orderdetailes__row">
+            <p class="orderdetailes__row__title">Manzil:</p>
+            <p class="orderdetailes__row__text">
+              Uchtepa 26-26-35, Olmos Building
+            </p>
+          </div>
         </div>
-        <div class="row">
-          <span>Holati:</span><span class="badge badge-yellow">YANGI</span>
-        </div>
-        <div class="row">
-          <span>Umumiy summa:</span
-          ><span class="row__text">30 000 000 UZS</span>
-        </div>
-        <div class="row">
-          <span>Qo’shimcha:</span><span class="row__text">Yetkazib berish</span>
-        </div>
-        <div class="row">
-          <span>Hudud:</span><span class="row__text">Toshkent sh.</span>
-        </div>
-        <div class="row">
-          <span>Manzil:</span
-          ><span class="row__text">Uchtepa 26–26–35, Olmos Building</span>
-        </div>
-      </div>
 
-      <h4>Mahsulotlar</h4>
+        <h4 class="orderdetailes__list">Mahsulotlar</h4>
 
-      <div class="cart-item">
-        <img src="./images/card1.png" alt="Gazobeton" />
-        <div class="details">
-          <strong>Gazobeton</strong>
-          <p>D300, 600×200×200<br />72 000 UZS/m3</p>
-          <span class="price">600 000 UZS/m3</span>
-        </div>
-      </div>
-
-      <div class="cart-item">
-        <img src="./images/card1.png" alt="Gazobeton" />
-        <div class="details">
-          <strong>Gazobeton</strong>
-          <p>D300, 600×200×200<br />72 000 UZS/m3</p>
-          <span class="price">600 000 UZS/m3</span>
+        <div class="cart__box">
+          <div class="cart__item">
+            <img
+              class="cart__item__img"
+              src="./images/card1.png"
+              alt="Gazobeton"
+            />
+            <div class="cart__details">
+              <h3 class="cart__details__title">Gazobeton</h3>
+              <p class="cart__details__text">
+                D300, 600×200×200<br />72 000 UZS/m3
+              </p>
+              <span class="cart__price">600 000 UZS/m3</span>
+            </div>
+          </div>
+          <div class="cart__item">
+            <img
+              class="cart__item__img"
+              src="./images/card1.png"
+              alt="Gazobeton"
+            />
+            <div class="cart__details">
+              <h3 class="cart__details__title">Gazobeton</h3>
+              <p class="cart__details__text">
+                D300, 600×200×200<br />72 000 UZS/m3
+              </p>
+              <span class="cart__price">600 000 UZS/m3</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

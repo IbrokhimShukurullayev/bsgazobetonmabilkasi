@@ -5,16 +5,17 @@
     <title>Profile</title>
     <link rel="stylesheet" href="./profile.css" />
     <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="profile">
       <div class="user-info">
         <div class="user__info__header">
           <h3>Profile</h3>
-          <img src="./images//settings.png" alt="Settings" />
+          <img src="./images/settings.svg" alt="Settings" />
         </div>
         <div class="user__info__footer">
-          <img src="./images/profiles.png" alt="Avatar" class="avatar" />
+          <img src="./images/profiles.svg" alt="Avatar" class="avatar" />
           <div class="user__info__footer__end">
             <h4>Alisher Ahmedov</h4>
             <p>+998 (94) 123–45–67</p>
@@ -23,45 +24,71 @@
       </div>
       <div class="menu">
         <div class="menu__hero">
-          <a href="settings.html">
-            <img src="./images/person.png" alt="" />
+          <a class="menu__hero__link" href="settings.html">
+            <img src="./images/person.svg" alt="" />
             Shaxsiy ma‘lumotlar</a
           >
-          <img src="./images/rights.png" alt="" />
+          <img src="./images/right.svg" alt="" />
         </div>
         <div class="menu__hero">
-          <a href="settings.html">
-            <img src="./images/language.png" alt="" />
+          <a class="menu__hero__link" href="settings.html">
+            <img src="./images/language.svg" alt="" />
             Tilni o‘zgartirish</a
           >
-          <img src="./images/rights.png" alt="" />
+          <img src="./images/right.svg" alt="" />
         </div>
         <div class="menu__hero">
-          <a href="settings.html">
-            <img src="./images/cantact.png" alt="" />
+          <a class="menu__hero__link" href="settings.html">
+            <img src="./images/cantact.svg" alt="" />
             Biz bilan bog‘lanish</a
           >
-          <img src="./images/rights.png" alt="" />
+          <img src="./images/right.svg" alt="" />
         </div>
         <div class="menu__hero">
-          <a href="settings.html">
-            <img src="./images/manzil.png" alt="" />
+          <a class="menu__hero__link" href="settings.html">
+            <img src="./images/manzil.svg" alt="" />
             Manzillar</a
           >
-          <img src="./images/rights.png" alt="" />
+          <img src="./images/right.svg" alt="" />
         </div>
-        <button class="logout-btn">
-          <img src="./images/logout.png" alt="logout" /> Log out
+        <button class="menu__logout__btn">
+          <img src="./images/logout.svg" alt="logout" /> Log out
         </button>
       </div>
     </div>
 
     <ul class="home__footer__list">
-      <li><img src="./images/main.png" alt="main" /> <span>Main</span></li>
-      <li><img src="./images/cart.png" alt="cart" /> <span>Main</span></li>
-      <li><img src="./images/order.png" alt="order" /> <span>Main</span></li>
       <li>
-        <img src="./images/profile.png" alt="profile" /> <span>Main</span>
+        <img
+          class="home__footer__list__img"
+          src="./images/main.svg"
+          alt="main"
+        />
+        <span>Main</span>
+      </li>
+      <li>
+        <img
+          class="home__footer__list__img"
+          src="./images/cart.svg"
+          alt="cart"
+        />
+        <span>Cart</span>
+      </li>
+      <li>
+        <img
+          class="home__footer__list__img"
+          src="./images/order.svg"
+          alt="order"
+        />
+        <span>Orders</span>
+      </li>
+      <li>
+        <img
+          class="home__footer__list__img"
+          src="./images/profile.svg"
+          alt="profile"
+        />
+        <span>Profile</span>
       </li>
     </ul>
   </body>

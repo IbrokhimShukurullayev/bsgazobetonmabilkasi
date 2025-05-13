@@ -21,11 +21,16 @@
 .home__footer__list li {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 6px;
 }
 
+.home__footer__list__img {
+  max-width: 24px;
+  height: 24px;
+}
+
 .home__footer__list li span {
-  font-family: "Plus Jakarta Sans", sans-serif;
   color: rgb(145, 136, 136);
   font-size: 12px;
   font-weight: 500;

@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
+  transition: 0.5s;
 }
 
 .container {
@@ -15,4 +16,16 @@
 
 body {
   background: rgb(246, 247, 249);
+}
+
+#product__body {
+  background: #fff !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
 }

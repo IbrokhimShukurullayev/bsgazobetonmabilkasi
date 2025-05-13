@@ -6,20 +6,21 @@
     <title>OTP Verification - BS Gazobeton</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="otp-styles.css" />
+    <link rel="stylesheet" href="./style/button.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
     />
   </head>
   <body>
-    <div class="phone-frame">
+    <div class="phone__frame container">
       <div class="content otp-content">
-        <div class="back-button">
-          <img src="./images/left.png" alt="left" />
-          <span class="back__button__span">Edit phone number</span>
+        <div class="back__button">
+          <img src="./images/left.svg" alt="left" />
+          <p class="back__button__span">Edit phone number</p>
         </div>
-        <h1>Verification Code</h1>
-        <p class="verification-text">
+        <h1 class="phone__frame__title">Verification Code</h1>
+        <p class="verification__text">
           A verification code has been sent to <br /><strong
             >+998 (90) 123-45-67</strong
           >
@@ -39,14 +40,12 @@
           <span class="timer">00:59</span>
         </div>
 
-        <button class="primary-button verify-button">
+        <button class="primary-button verify__button form__button">
           Verify
-          <span class="arrow"><img src="./images/right.png" alt="" /></span>
+          <span class="arrow"><img src="./images/rights.svg" alt="" /></span>
         </button>
       </div>
     </div>
-
-    <a href="index.html" class="back-link">Back to Home</a>
 
     <script src="app.js"></script>
   </body>
