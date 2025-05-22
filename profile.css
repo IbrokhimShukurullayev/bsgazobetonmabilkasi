@@ -1,6 +1,11 @@
 .profile {
   padding: 0 0 100px 0;
 }
+
+.container {
+  padding: 0 !important;
+}
+
 .user-info {
   margin-bottom: 24px;
   padding: 25px 20px;

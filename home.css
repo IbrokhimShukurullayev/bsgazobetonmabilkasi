@@ -4,7 +4,20 @@
   align-items: center;
   justify-content: space-between;
   margin: 0;
-  padding: 20px 0;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  height: 70px;
+  overflow: hidden;
+}
+
+.home__cards {
+  margin-top: 80px;
 }
 
 .home__box {

@@ -103,6 +103,13 @@
   white-space: nowrap;
 }
 
+.orders__title {
+  color: rgba(33, 34, 34, 1);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: -1.3%;
+}
 .orders__badge__yellow {
   background: rgba(240, 149, 2, 0.1);
   color: rgba(228, 147, 8, 1);

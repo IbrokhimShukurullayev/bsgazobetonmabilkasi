@@ -28,4 +28,7 @@ a {
 
 button {
   outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
